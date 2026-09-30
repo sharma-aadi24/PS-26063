@@ -1,5 +1,5 @@
 // src/services/api.ts
-const BASE = '/api';
+const BASE = 'https://ps-26063-backend.onrender.com/api';
 
 export async function fetchEntity<T>(entity: string, params?: Record<string,string>): Promise<T[]> {
   const qs = params ? '?' + new URLSearchParams(params).toString() : '';
@@ -27,7 +27,11 @@ export async function searchAll(q: string) {
 }
 
 export async function postOutreach(body: object) {
-  const r = await fetch(`${BASE}/outreach`, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) });
+  const r = await fetch(`${BASE}/outreach`, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(body)
+  });
   if (!r.ok) throw new Error('Failed to post outreach');
   return r.json();
 }
