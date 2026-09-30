@@ -1,0 +1,33 @@
+{
+  "name": "polaris",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.105.2",
+    "@react-three/fiber": "^8.15.5",
+    "@tanstack/react-query": "^5.24.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "lucide-react": "^0.363.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.1",
+    "recharts": "^2.12.6",
+    "tailwindcss": "^3.4.0",
+    "three": "^0.165.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.6.1",
+    "postcss": "^8.5.28",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10"
+  }
+}
